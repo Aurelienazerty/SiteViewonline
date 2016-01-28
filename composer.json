@@ -1,0 +1,28 @@
+{
+    "name": "Aurelienazerty/SiteViewonline",
+    "type": "phpbb-extension",
+    "description": "Affiche les pages du site dans le qui est en ligne.",
+    "homepage": "http://www.team-azerty.com",
+    "version": "1.0.0",
+    "time": "2015-01-19",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Aurelienazerty",
+            "homepage": "http://www.team-azerty.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+   "require-dev": {
+      "phpbb/epv": "dev-master"
+   },
+    "extra": {
+        "display-name": "Detailed viewonline",
+        "soft-require": {
+           "phpbb/phpbb": "3.1.*@dev"
+        }
+    }
+}
