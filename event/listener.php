@@ -78,7 +78,7 @@ class listener implements EventSubscriberInterface
 		*/
 		if (strpos($on_page[1], '..') !== false) {
 			$location = 'Index du site';
-			$location_url = 'http://www.team-azerty.com';
+			$location_url = 'https://www.team-azerty.com';
 			//Selon $on_page[1]
 			if (strpos($on_page[1], 'lan') !== false) {
 				$location = 'Rubrique LAN';
@@ -87,7 +87,7 @@ class listener implements EventSubscriberInterface
 				$location = 'Rubrique Actualités';
 				$location_url .= '/html/news';
 			} else if (strpos($on_page[1], 'bench') !== false || strpos($on_page[1], 'config') !== false) {
-				$location = 'Rubrique Bnchs';
+				$location = 'Rubrique Benchs';
 				$location_url .= '/html/benchs';
 			} else if (strpos($on_page[1], 'article') !== false) {
 				$location = 'Rubrique Articles';
@@ -95,6 +95,19 @@ class listener implements EventSubscriberInterface
 			} else if (strpos($on_page[1], 'foot') !== false) {
 				$location = 'Rubrique Prono-foot';
 				$location_url .= '/html/prono-foot';
+			} else if (strpos($on_page[1], 'rss') !== false) {
+				$location = 'Flux RSS';
+				$location_url .= '/html/prono-foot';
+			} else if (strpos($on_page[1], 'autorisation_image') !== false) {
+				$location = 'Consulte une image sur le site';
+				$query = $row['session_page'];
+				
+				preg_match('/&img=(.*)/', $query, $matches);
+				$img = $matches[1];
+				$img = str_replace('images%2F', '', $img);
+				$photo = getPhotoFromUrl($img);
+				
+				$location_url .= '/images/view-' . $photo->photo_id() . '.html';
 			}
 			$event['location']= $location;
 			$event['location_url'] = $location_url;
