@@ -8,7 +8,7 @@
 *
 */
 
-namespace Aurelienazerty\SiteViewonline\event;
+namespace aurelienazerty\siteviewonline\event;
 
 /**
 * Event listener
@@ -44,7 +44,7 @@ class listener implements EventSubscriberInterface
 	* @param \phpbb\auth\auth                     $auth             User object
 	* @param string                               $phpbb_root_path  phpbb_root_path
 	* @param string                               $php_ext          phpEx
-	* @return \Aurelienazerty\SiteViewonline\event\listener
+	* @return \aurelienazerty\siteviewonline\event\listener
 	* @access public
 	*/
 	public function __construct(\phpbb\config\config $config, \phpbb\db\driver\driver_interface $db, \phpbb\user $user, \phpbb\auth\auth $auth, $phpbb_root_path, $php_ext)

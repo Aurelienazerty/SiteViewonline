@@ -1,5 +1,5 @@
 {
-    "name": "Aurelienazerty/SiteViewonline",
+    "name": "aurelienazerty/siteviewonline",
     "type": "phpbb-extension",
     "description": "Affiche les pages du site dans le qui est en ligne.",
     "homepage": "http://www.team-azerty.com",
@@ -8,7 +8,7 @@
     "license": "GPL-2.0",
     "authors": [
         {
-            "name": "Aurelienazerty",
+            "name": "aurelienazerty",
             "homepage": "http://www.team-azerty.com",
             "role": "Developer"
         }

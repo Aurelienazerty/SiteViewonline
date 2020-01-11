@@ -1,6 +1,6 @@
 services:
-    .SiteViewonline.listener:
-        class: Aurelienazerty\SiteViewonline\event\listener
+    .siteviewonline.listener:
+        class: aurelienazerty\siteviewonline\event\listener
         arguments:
             - '@config'
             - '@dbal.conn'
