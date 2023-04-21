@@ -2,14 +2,14 @@
     "name": "aurelienazerty/siteviewonline",
     "type": "phpbb-extension",
     "description": "Affiche les pages du site dans le qui est en ligne.",
-    "homepage": "http://www.team-azerty.com",
+    "homepage": "https://www.team-azerty.com",
     "version": "1.0.1",
     "time": "2015-01-19",
     "license": "GPL-2.0",
     "authors": [
         {
             "name": "aurelienazerty",
-            "homepage": "http://www.team-azerty.com",
+            "homepage": "https://www.team-azerty.com",
             "role": "Developer"
         }
     ],
